@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>童泓昊 · 网络工程 · 个人主页</title>
+  <meta name="description" content="童泓昊的个人主页 —— 福建师范大学协和学院 2025 级网络工程专业，关注网络架构、信息安全与 AI 工具。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>童泓昊</span>
+      </a>
+      <button class="nav-toggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#timeline">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">福建师范大学协和学院 · 信息技术系</p>
+          <h1>你好，我是<span class="hl">童泓昊</span></h1>
+          <p class="lead">
+            2025 级网络工程专业在读。喜欢把复杂的网络拆开看它怎么工作的 ——
+            从 VLAN 划分到路由收敛，从恶意代码特征到 AI 工具的实际边界。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">看看我的项目</a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
+          <ul class="hero-meta">
+            <li><span class="k">学号</span> 124262025020</li>
+            <li><span class="k">方向</span> 网络工程</li>
+            <li><span class="k">所在地</span> 福建 · 福州</li>
+          </ul>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="term">
+            <div class="term-bar">
+              <i></i><i></i><i></i>
+              <span>tonghonghao@fjnucs</span>
+            </div>
+            <pre class="term-body"><code><span class="c-p">$</span> whoami
+tonghonghao — 网络工程 2025
+
+<span class="c-p">$</span> cat focus.txt
+VLAN / 路由交换 / 网络安全
+Packet Tracer / Wireshark
+数据结构 / SDN / AI 工具
+
+<span class="c-p">$</span> ping future
+<span class="c-g">64 bytes from future: 正在连接...</span>
+<span class="caret">&nbsp;</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section-title"><span class="num">01</span>关于我</h2>
+        <div class="about-grid">
+          <div class="about-main">
+            <p>
+              我是福建师范大学协和学院信息技术系 2025 级网络工程专业的学生。
+              这一年里我把大部分精力放在两件事上：<strong>把网络底层的原理弄明白</strong>，
+              以及<strong>用工具把这些原理跑起来看到效果</strong>。
+            </p>
+            <p>
+              课程设计里我用 Cisco Packet Tracer 搭了一套校园局域网，
+              按楼栋划分 VLAN、配置三层交换与 DHCP，反复调试设备间地址分配和路由可达性。
+              同时在网络安全课程中做恶意代码特征分析与防御报告，
+              习惯用 Wireshark 抓包去验证书本上的每一个结论。
+            </p>
+            <p>
+              我对 AI 编程工具也很感兴趣，日常在 WorkBuddy 和 Trae 之间做对比实验，
+              记录它们在不同任务上的表现差异。对我来说，工具不是重点，
+              能多快把想法变成能跑的东西才是。
+            </p>
+          </div>
+          <aside class="about-side">
+            <div class="fact-card">
+              <h3>当前在做</h3>
+              <ul>
+                <li>校园 LAN 设计（Packet Tracer）</li>
+                <li>恶意代码特征分析与防御报告</li>
+                <li>AI 名词术语速查手册整理</li>
+              </ul>
+            </div>
+            <div class="fact-card">
+              <h3>在读课程</h3>
+              <ul>
+                <li>网络基础课程设计</li>
+                <li>网络信息安全</li>
+                <li>数据结构 · SDN</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="section section-alt">
+      <div class="wrap">
+        <h2 class="section-title"><span class="num">02</span>技能栈</h2>
+        <div class="skills-grid" id="skills-grid"></div>
+        <p class="hint">点击任意技能标签可以筛选 —— 这是页面上第一处 JS 交互，实现只用了十来行代码。</p>
+      </div>
+    </section>
+
+    <!-- 项目 -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="section-title"><span class="num">03</span>项目经历</h2>
+        <div class="cards" id="project-cards"></div>
+      </div>
+    </section>
+
+    <!-- 时间线 -->
+    <section id="timeline" class="section section-alt">
+      <div class="wrap">
+        <h2 class="section-title"><span class="num">04</span>学习轨迹</h2>
+        <ol class="timeline">
+          <li>
+            <span class="tl-dot"></span>
+            <div class="tl-body">
+              <h3>网络基础课程设计</h3>
+              <p>基于 Cisco Packet Tracer 完成校园局域网整体设计：VLAN 划分、三层交换、DHCP 地址池与设备互联互通调试。</p>
+            </div>
+          </li>
+          <li>
+            <span class="tl-dot"></span>
+            <div class="tl-body">
+              <h3>网络信息安全实践</h3>
+              <p>完成恶意代码特征分析与防御报告，从样本行为、传播方式到防护策略做了完整梳理。</p>
+            </div>
+          </li>
+          <li>
+            <span class="tl-dot"></span>
+            <div class="tl-body">
+              <h3>数据结构与 SDN</h3>
+              <p>同步推进数据结构基础训练与软件定义网络的学习，理解控制平面与转发平面的分离。</p>
+            </div>
+          </li>
+          <li>
+            <span class="tl-dot"></span>
+            <div class="tl-body">
+              <h3>个人主页上线</h3>
+              <p>用纯静态 HTML / CSS / JS 搭建本站，并完成从本地到云端的部署闭环。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="section">
+      <div class="wrap contact-wrap">
+        <h2 class="section-title"><span class="num">05</span>联系我</h2>
+        <p class="contact-lead">不管是课程项目交流、技术问题讨论，还是单纯想聊聊网络和工具，都欢迎。</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:your-email@example.com">
+            <span class="cc-label">Email</span>
+            <span class="cc-value">your-email@example.com</span>
+          </a>
+          <a class="contact-card" href="https://github.com/" target="_blank" rel="noopener">
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">github.com/你的用户名</span>
+          </a>
+          <a class="contact-card" href="#top">
+            <span class="cc-label">所在地</span>
+            <span class="cc-value">中国 · 福建 · 福州</span>
+          </a>
+        </div>
+        <p class="hint">把上面的邮箱和 GitHub 换成你自己的，改 <code>index.html</code> 里对应的两行即可。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> 童泓昊 · 用纯静态 HTML / CSS / JS 手写</p>
+      <p class="footer-note">本站由 GitHub Pages / Vercel 托管</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="回到顶部">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
